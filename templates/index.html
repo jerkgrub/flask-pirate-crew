@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirate Crew</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #8b4513;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px 10px 0 0;
+            position: relative;
+        }
+        .add-pirate {
+            background-color: #1e90ff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            font-size: 16px;
+        }
+        .pirate {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+            transition: background-color 0.3s;
+        }
+        .pirate:hover {
+            background-color: #f9f9f9;
+        }
+        .pirate img {
+            width: 50px;
+            height: 50px;
+            background-color: #ddd;
+            border-radius: 50%;
+        }
+        .pirate-name {
+            flex-grow: 1;
+            margin-left: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .buttons button {
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 14px;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        .view-btn {
+            background-color: #1e90ff;
+        }
+        .view-btn:hover {
+            background-color: #1a78d1;
+        }
+        .walk-btn {
+            background-color: #ff4500;
+        }
+        .walk-btn:hover {
+            background-color: #e03e00;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Pirate Crew</h1>
+            <button class="add-pirate">Add Pirate</button>
+        </div>
+        <div class="pirate">
+            <img src="https://upload.wikimedia.org/wikipedia/en/0/0f/Barbossa_in_Pirates_of_the_Caribbean_At_World%27s_End.JPG" alt="Black Beard Jones">
+            <div class="pirate-name">Black Beard Jones</div>
+            <div class="buttons">
+                <button class="view-btn">View Pirate</button>
+                <button class="walk-btn">Walk the Plank</button>
+            </div>
+        </div>
+        <div class="pirate">
+            <img src="https://upload.wikimedia.org/wikipedia/en/a/a2/Jack_Sparrow_In_Pirates_of_the_Caribbean-_At_World%27s_End.JPG" alt="Dreadful Pete">
+            <div class="pirate-name">Dreadful Pete</div>
+            <div class="buttons">
+                <button class="view-btn">View Pirate</button>
+                <button class="walk-btn">Walk the Plank</button>
+            </div>
+        </div>
+        <div class="pirate">
+            <img src="placeholder.png" alt="Deep Sea Davy">
+            <div class="pirate-name">Deep Sea Davy</div>
+            <div class="buttons">
+                <button class="view-btn">View Pirate</button>
+                <button class="walk-btn">Walk the Plank</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
